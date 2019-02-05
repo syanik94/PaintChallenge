@@ -13,7 +13,23 @@
 		3D298E5322025325003C2B23 /* Paint_Challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D298E5122025325003C2B23 /* Paint_Challenge.xcdatamodeld */; };
 		3D298E5522025327003C2B23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D298E5422025327003C2B23 /* Assets.xcassets */; };
 		3D298E5822025327003C2B23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D298E5622025327003C2B23 /* LaunchScreen.storyboard */; };
+		3D298E65220255E4003C2B23 /* ColorSelectionCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D298E64220255E4003C2B23 /* ColorSelectionCollectionView.swift */; };
+		3D298E67220256C8003C2B23 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D298E66220256C8003C2B23 /* Colors.swift */; };
+		3D298E69220256EB003C2B23 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D298E68220256EB003C2B23 /* CanvasView.swift */; };
+		3D298E6F2203BB33003C2B23 /* ColorPaletteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D298E6E2203BB33003C2B23 /* ColorPaletteCollectionViewCell.swift */; };
+		3D6C70272209AA9A00AA4C52 /* Paint_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C70262209AA9A00AA4C52 /* Paint_ChallengeTests.swift */; };
+		3D6C702F220A24B100AA4C52 /* ViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C702E220A24B100AA4C52 /* ViewConfig.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D6C70292209AA9A00AA4C52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D298E3F22025324003C2B23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D298E4622025324003C2B23;
+			remoteInfo = "Paint Challenge";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3D298E4722025324003C2B23 /* Paint Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Paint Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +40,25 @@
 		3D298E5422025327003C2B23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D298E5722025327003C2B23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D298E5922025327003C2B23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D298E64220255E4003C2B23 /* ColorSelectionCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSelectionCollectionView.swift; sourceTree = "<group>"; };
+		3D298E66220256C8003C2B23 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		3D298E68220256EB003C2B23 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		3D298E6E2203BB33003C2B23 /* ColorPaletteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaletteCollectionViewCell.swift; sourceTree = "<group>"; };
+		3D6C70242209AA9A00AA4C52 /* Paint ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Paint ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D6C70262209AA9A00AA4C52 /* Paint_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paint_ChallengeTests.swift; sourceTree = "<group>"; };
+		3D6C70282209AA9A00AA4C52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D6C702E220A24B100AA4C52 /* ViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3D298E4422025324003C2B23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D6C70212209AA9A00AA4C52 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				3D298E4922025324003C2B23 /* Paint Challenge */,
+				3D6C70252209AA9A00AA4C52 /* Paint ChallengeTests */,
 				3D298E4822025324003C2B23 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				3D298E4722025324003C2B23 /* Paint Challenge.app */,
+				3D6C70242209AA9A00AA4C52 /* Paint ChallengeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,7 +90,9 @@
 			isa = PBXGroup;
 			children = (
 				3D298E4A22025324003C2B23 /* AppDelegate.swift */,
-				3D298E4C22025325003C2B23 /* ViewController.swift */,
+				3D298E5F22025582003C2B23 /* Model */,
+				3D298E62220255B3003C2B23 /* View */,
+				3D298E63220255BE003C2B23 /* Controller */,
 				3D298E4E22025325003C2B23 /* Main.storyboard */,
 				3D298E5422025327003C2B23 /* Assets.xcassets */,
 				3D298E5622025327003C2B23 /* LaunchScreen.storyboard */,
@@ -65,6 +100,42 @@
 				3D298E5122025325003C2B23 /* Paint_Challenge.xcdatamodeld */,
 			);
 			path = "Paint Challenge";
+			sourceTree = "<group>";
+		};
+		3D298E5F22025582003C2B23 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D298E66220256C8003C2B23 /* Colors.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D298E62220255B3003C2B23 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D298E68220256EB003C2B23 /* CanvasView.swift */,
+				3D298E6E2203BB33003C2B23 /* ColorPaletteCollectionViewCell.swift */,
+				3D6C702E220A24B100AA4C52 /* ViewConfig.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D298E63220255BE003C2B23 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3D298E4C22025325003C2B23 /* ViewController.swift */,
+				3D298E64220255E4003C2B23 /* ColorSelectionCollectionView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3D6C70252209AA9A00AA4C52 /* Paint ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D6C70262209AA9A00AA4C52 /* Paint_ChallengeTests.swift */,
+				3D6C70282209AA9A00AA4C52 /* Info.plist */,
+			);
+			path = "Paint ChallengeTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +158,24 @@
 			productReference = 3D298E4722025324003C2B23 /* Paint Challenge.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3D6C70232209AA9A00AA4C52 /* Paint ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D6C702D2209AA9A00AA4C52 /* Build configuration list for PBXNativeTarget "Paint ChallengeTests" */;
+			buildPhases = (
+				3D6C70202209AA9A00AA4C52 /* Sources */,
+				3D6C70212209AA9A00AA4C52 /* Frameworks */,
+				3D6C70222209AA9A00AA4C52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D6C702A2209AA9A00AA4C52 /* PBXTargetDependency */,
+			);
+			name = "Paint ChallengeTests";
+			productName = "Paint ChallengeTests";
+			productReference = 3D6C70242209AA9A00AA4C52 /* Paint ChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +188,10 @@
 				TargetAttributes = {
 					3D298E4622025324003C2B23 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					3D6C70232209AA9A00AA4C52 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3D298E4622025324003C2B23;
 					};
 				};
 			};
@@ -116,6 +209,7 @@
 			projectRoot = "";
 			targets = (
 				3D298E4622025324003C2B23 /* Paint Challenge */,
+				3D6C70232209AA9A00AA4C52 /* Paint ChallengeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +225,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3D6C70222209AA9A00AA4C52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,12 +240,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D298E4D22025325003C2B23 /* ViewController.swift in Sources */,
+				3D298E65220255E4003C2B23 /* ColorSelectionCollectionView.swift in Sources */,
+				3D298E6F2203BB33003C2B23 /* ColorPaletteCollectionViewCell.swift in Sources */,
+				3D6C702F220A24B100AA4C52 /* ViewConfig.swift in Sources */,
+				3D298E69220256EB003C2B23 /* CanvasView.swift in Sources */,
+				3D298E67220256C8003C2B23 /* Colors.swift in Sources */,
 				3D298E4B22025324003C2B23 /* AppDelegate.swift in Sources */,
 				3D298E5322025325003C2B23 /* Paint_Challenge.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3D6C70202209AA9A00AA4C52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D6C70272209AA9A00AA4C52 /* Paint_ChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D6C702A2209AA9A00AA4C52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D298E4622025324003C2B23 /* Paint Challenge */;
+			targetProxy = 3D6C70292209AA9A00AA4C52 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3D298E4E22025325003C2B23 /* Main.storyboard */ = {
@@ -318,6 +440,46 @@
 			};
 			name = Release;
 		};
+		3D6C702B2209AA9A00AA4C52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DNPC864748;
+				INFOPLIST_FILE = "Paint ChallengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.syanik.Paint-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Paint Challenge.app/Paint Challenge";
+			};
+			name = Debug;
+		};
+		3D6C702C2209AA9A00AA4C52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DNPC864748;
+				INFOPLIST_FILE = "Paint ChallengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.syanik.Paint-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Paint Challenge.app/Paint Challenge";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -335,6 +497,15 @@
 			buildConfigurations = (
 				3D298E5D22025327003C2B23 /* Debug */,
 				3D298E5E22025327003C2B23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D6C702D2209AA9A00AA4C52 /* Build configuration list for PBXNativeTarget "Paint ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D6C702B2209AA9A00AA4C52 /* Debug */,
+				3D6C702C2209AA9A00AA4C52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
