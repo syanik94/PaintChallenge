@@ -10,29 +10,17 @@ import UIKit
 
 class ColorPaletteCollectionViewCell: UICollectionViewCell {
     
-    
-    
     // MARK: - Outlets
-    
     @IBOutlet weak var viewBackground: UIView!
-    
 
-    
     // MARK: - Helper Methods
-    
     func configureCellColor(data: [ColorPalette], indexPath: IndexPath) {
-        
         self.viewBackground.backgroundColor = data[indexPath.row].color
     }
     
     func configureCellView() {
-        
         self.layer.borderWidth = 2
         self.layer.borderColor = UIColor.black.cgColor
         self.layer.cornerRadius = 30
     }
-    
-    
-    
-    
 }

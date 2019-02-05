@@ -8,8 +8,7 @@
 
 import UIKit
 
-enum Colors {
-    
+enum Color {
     case red
     case blue
     case green
@@ -20,10 +19,8 @@ enum Colors {
 }
 
 struct ColorPalette {
-    
-    var colorName: Colors
+    var colorName: Color
     var color: UIColor {
-        
         switch colorName {
         case .gray:
             return UIColor.gray
@@ -41,11 +38,9 @@ struct ColorPalette {
             return UIColor.white
         }
     }
-    
-    init(colorName: Colors) {
+    init(colorName: Color) {
         self.colorName = colorName
     }
-    
 }
 
 

@@ -8,33 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    
+class PaintViewController: UIViewController {
     
     enum ReuseIdentifiers: String {
-        
         case colorPaletteCell = "colorViewCell"
     }
     
-    
     // MARK: - Declarations
-
     var colorSelection: [ColorPalette] = []
     
-    
     // MARK: - Outlets
-    
     @IBOutlet weak var canvasView: CanvasView!
     @IBOutlet weak var stencilCollectionView: UICollectionView!
     @IBOutlet weak var clearButton: UIButton!
     
-    
-    
     // MARK: - View Life Cycle
-    
     override func viewDidLoad() {
-        
         stencilCollectionView.dataSource = self
         stencilCollectionView.delegate = self
 
@@ -43,7 +32,6 @@ class ViewController: UIViewController {
         clearButton.configureClearButtonUI()
         stencilCollectionView.configureCollectionViewUI()
         
-        
         // Load Data
         initializeVariables()
         
@@ -51,33 +39,26 @@ class ViewController: UIViewController {
     }
     
     // MARK: - Helper Methods
-    
     func initializeVariables() {
-        
         let red = ColorPalette(colorName: .red)
         let green = ColorPalette(colorName: .green)
         let blue = ColorPalette(colorName: .blue)
-        
         let black = ColorPalette(colorName: .black)
         let white = ColorPalette(colorName: .white)
         let gray = ColorPalette(colorName: .gray)
-        
-        self.colorSelection = [white,
-                               green,
-                               blue,
-                               black,
-                               red,
-                               gray
-                                ]
+        self.colorSelection = [
+            white,
+            green,
+            blue,
+            black,
+            red,
+            gray
+        ]
     }
-    
     
     @IBAction func clearTapped(_ sender: Any) {
-        
         canvasView.clearDrawing()
     }
-    
-    
     
 }
 
