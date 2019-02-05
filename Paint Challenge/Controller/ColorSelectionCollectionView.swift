@@ -21,7 +21,6 @@ extension PaintViewController: UICollectionViewDataSource {
         }
         cell.configureCellColor(data: colorSelection, indexPath: indexPath)
         cell.configureCellView()
-        
         return cell
     }
 }
