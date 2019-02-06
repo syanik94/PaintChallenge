@@ -19,8 +19,9 @@ extension PaintViewController: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ReuseIdentifiers.colorPaletteCell.rawValue, for: indexPath) as? ColorPaletteCollectionViewCell else {
             return defaultCell
         }
-        cell.configureCellColor(data: colorSelection, indexPath: indexPath)
+        cell.configureCellColor(palette: colorSelection[indexPath.row])
         cell.configureCellView()
+        
         return cell
     }
 }
@@ -28,6 +29,7 @@ extension PaintViewController: UICollectionViewDataSource {
 extension PaintViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         canvasView.initializeColor(color: colorSelection[indexPath.row].color)
+        
         UIView.animate(withDuration: 0.25) {
             if let cell = collectionView.cellForItem(at: indexPath) as? ColorPaletteCollectionViewCell {
                 cell.transform = .init(scaleX: 1.2, y: 1.2)

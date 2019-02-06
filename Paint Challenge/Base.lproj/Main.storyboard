@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,15 +15,15 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="PaintViewController" customModule="Paint_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nVM-We-guK" customClass="CanvasView" customModule="Paint_Challenge" customModuleProvider="target">
-                                <rect key="frame" x="16" y="20" width="343" height="441"/>
+                                <rect key="frame" x="16" y="20" width="343" height="506"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="71i-Zk-tX7">
-                                <rect key="frame" x="16" y="510" width="568" height="90"/>
+                                <rect key="frame" x="16" y="577" width="343" height="90"/>
                                 <color key="backgroundColor" red="1" green="0.81568627450980391" blue="0.42745098039215684" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="POe-zf-moV"/>
@@ -54,19 +58,10 @@
                                             <outlet property="viewBackground" destination="aSu-ed-ImZ" id="qsw-Y8-Pma"/>
                                         </connections>
                                     </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" reuseIdentifier="lineWeightCell" id="kWf-hc-TCi" customClass="LightWeightCell" customModule="Paint_Challenge" customModuleProvider="target">
-                                        <rect key="frame" x="82" y="10" width="72" height="70"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="72" height="70"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
-                                    </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tj4-DD-RMP">
-                                <rect key="frame" x="16" y="469" width="568" height="33"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tj4-DD-RMP">
+                                <rect key="frame" x="16" y="529" width="343" height="40"/>
                                 <color key="backgroundColor" red="0.95686274509803915" green="0.792156862745098" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Clear">
@@ -81,11 +76,11 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="71i-Zk-tX7" secondAttribute="trailing" constant="16" id="2Dz-TZ-1Xc"/>
-                            <constraint firstItem="tj4-DD-RMP" firstAttribute="top" secondItem="nVM-We-guK" secondAttribute="bottom" constant="8" id="Rej-nx-A0N"/>
                             <constraint firstItem="71i-Zk-tX7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="S7c-L6-Orw"/>
+                            <constraint firstItem="tj4-DD-RMP" firstAttribute="top" secondItem="nVM-We-guK" secondAttribute="bottom" constant="10" id="VDX-Nf-C2d"/>
                             <constraint firstItem="nVM-We-guK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Vsp-zc-SEs"/>
+                            <constraint firstItem="71i-Zk-tX7" firstAttribute="top" secondItem="tj4-DD-RMP" secondAttribute="bottom" constant="8" id="elb-ej-LuN"/>
                             <constraint firstItem="nVM-We-guK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="f82-lr-7nH"/>
-                            <constraint firstItem="71i-Zk-tX7" firstAttribute="top" secondItem="tj4-DD-RMP" secondAttribute="bottom" constant="8" id="gUM-TR-bQI"/>
                             <constraint firstItem="tj4-DD-RMP" firstAttribute="leading" secondItem="nVM-We-guK" secondAttribute="leading" id="ghf-Zo-jBv"/>
                             <constraint firstItem="71i-Zk-tX7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ifc-i8-lqw"/>
                             <constraint firstItem="tj4-DD-RMP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lkC-56-pTC"/>

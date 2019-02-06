@@ -14,8 +14,8 @@ class ColorPaletteCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var viewBackground: UIView!
 
     // MARK: - Helper Methods
-    func configureCellColor(data: [ColorPalette], indexPath: IndexPath) {
-        self.viewBackground.backgroundColor = data[indexPath.row].color
+    func configureCellColor(palette: ColorPalette) {
+        self.viewBackground.backgroundColor = palette.color
     }
     
     func configureCellView() {

@@ -19,6 +19,7 @@
 		3D298E6F2203BB33003C2B23 /* ColorPaletteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D298E6E2203BB33003C2B23 /* ColorPaletteCollectionViewCell.swift */; };
 		3D6C70272209AA9A00AA4C52 /* Paint_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C70262209AA9A00AA4C52 /* Paint_ChallengeTests.swift */; };
 		3D6C702F220A24B100AA4C52 /* ViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C702E220A24B100AA4C52 /* ViewConfig.swift */; };
+		3D6C7031220A60B800AA4C52 /* DrawingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C7030220A60B800AA4C52 /* DrawingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		3D6C70262209AA9A00AA4C52 /* Paint_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paint_ChallengeTests.swift; sourceTree = "<group>"; };
 		3D6C70282209AA9A00AA4C52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D6C702E220A24B100AA4C52 /* ViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfig.swift; sourceTree = "<group>"; };
+		3D6C7030220A60B800AA4C52 /* DrawingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		3D298E63220255BE003C2B23 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3D6C7030220A60B800AA4C52 /* DrawingManager.swift */,
 				3D298E4C22025325003C2B23 /* PaintViewController.swift */,
 				3D298E64220255E4003C2B23 /* ColorSelectionCollectionView.swift */,
 			);
@@ -243,6 +246,7 @@
 				3D298E65220255E4003C2B23 /* ColorSelectionCollectionView.swift in Sources */,
 				3D298E6F2203BB33003C2B23 /* ColorPaletteCollectionViewCell.swift in Sources */,
 				3D6C702F220A24B100AA4C52 /* ViewConfig.swift in Sources */,
+				3D6C7031220A60B800AA4C52 /* DrawingManager.swift in Sources */,
 				3D298E69220256EB003C2B23 /* CanvasView.swift in Sources */,
 				3D298E67220256C8003C2B23 /* Color.swift in Sources */,
 				3D298E4B22025324003C2B23 /* AppDelegate.swift in Sources */,

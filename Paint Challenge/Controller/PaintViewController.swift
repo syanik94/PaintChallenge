@@ -15,6 +15,7 @@ class PaintViewController: UIViewController {
     }
     
     // MARK: - Declarations
+    let drawingManager = DrawingManager()
     var colorSelection: [ColorPalette] = []
     
     // MARK: - Outlets
@@ -46,7 +47,7 @@ class PaintViewController: UIViewController {
         let black = ColorPalette(colorName: .black)
         let white = ColorPalette(colorName: .white)
         let gray = ColorPalette(colorName: .gray)
-        self.colorSelection = [
+        colorSelection = [
             white,
             green,
             blue,
@@ -57,7 +58,7 @@ class PaintViewController: UIViewController {
     }
     
     @IBAction func clearTapped(_ sender: Any) {
-        canvasView.clearDrawing()
+        drawingManager.clear(canvas: canvasView)
     }
     
 }
